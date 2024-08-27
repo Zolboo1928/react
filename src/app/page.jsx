@@ -1,23 +1,29 @@
-import { Card } from "./components/card";
-import { Footer } from "./components/footer";
-import { Header } from "./components/header";
+import { ProductCard } from "./components/productCard";
 
-export default function Home() {
+
+export default async function Home() {
+  const response = await fetch("https://dummyjson.com/products");
+  const data = await response.json();
+
+  const { products } = data;
+
   return (
-        <main>
-          <section>
-            <div class="container">
-              <div class="row">
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+    <main>
+      <section>
+        <div className="container">
+          <select name="" id="">
+            <option value="">Select category...</option>
+            <option value="">Beauty</option>
+          </select>
+          <div className="row">
+            {products.map((product) => (
+              <div key={product.id}>
+                <ProductCard product={product} />
               </div>
-            </div>
-          </section>
-        </main>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
-

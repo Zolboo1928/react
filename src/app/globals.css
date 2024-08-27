@@ -21,7 +21,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 185px;
 }
 
 header {
@@ -52,7 +51,6 @@ header ul li.bars {
 }
 
 header ul li.bars a {
-  /* eniig sain oilgohgu baigaa */
   width: 25px;
 }
 
@@ -89,10 +87,8 @@ section article a:hover {
 }
 
 footer {
-  position: fixed;
   width: 100%;
   min-height: 100px;
-  bottom: 0;
   padding: 50px;
   color: #fff;
   background: #171724;
@@ -122,6 +118,71 @@ footer a {
   height: auto;
 }
 
-.bars {
-  display: block; /* ajlahgui baigaa yagaad ?*/
+main {
+  padding: 40px 0;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.product-content {
+  padding: 20px;
+}
+
+.product-title {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.product-price {
+  margin: 0 0 10px;
+  color: #28a745;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.product-description {
+  margin: 0 0 20px;
+  color: #555;
+
+  height: 60px;
+  overflow: hidden;
+}
+
+.product-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  text-align: center;
+}
+
+.product-button:hover {
+  background-color: #0056b3;
 }
