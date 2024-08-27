@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header/>
         {children}
-        <p>bye git!!!</p>
         <Footer/>
         </body>
     </html>
