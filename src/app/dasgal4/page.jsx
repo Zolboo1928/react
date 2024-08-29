@@ -4,7 +4,6 @@ import { useState } from "react"
 
 const Page = ()=>{
     const [input,setInput] = useState("")
-    console.log(input)
         return (
           <>
             <input type="text" value={input} onChange={(e) =>{

@@ -21,7 +21,7 @@ const Page = () => {
           onChange={(e) => setResult1(Number(e.target.value))}
         />
         <select name="" id="" onChange={(e) => setSymbol(e.target.value)}>
-            <option value="">Select symbol</option>
+          <option value="">Select symbol</option>
           <option value="+">+</option>
           <option value="-">-</option>
         </select>
