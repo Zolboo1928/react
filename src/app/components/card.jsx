@@ -1,3 +1,4 @@
+
 export const Card = ()=>{
     return (
       <article>
@@ -7,7 +8,7 @@ export const Card = ()=>{
           repellendus fuga, temporibus veniam fugiat quia sint nam harum minima
           provident.
         </p>
-        <a href="#">Read more</a>
+        <a href="" >Read more</a>
       </article>
     );
 }

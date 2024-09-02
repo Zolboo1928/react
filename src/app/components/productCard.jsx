@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const ProductCard = (props) => {
   const { product } = props;
 
@@ -12,9 +14,9 @@ export const ProductCard = (props) => {
         <h3 className="product-title">{product.title}</h3>
         <p className="product-price">${product.price}</p>
         <p className="product-description">{product.description}</p>
-        <a href="#" className="product-button">
+        <Link href={`/products/${product.id}`} className="product-button">
           Read more
-        </a>
+        </Link>
       </div>
     </div>
   );
